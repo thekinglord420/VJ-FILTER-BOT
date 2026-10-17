@@ -66,6 +66,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'MovieVerseHD')
 # Fixed Database Mismatch Fields Required By Database Script
 USER_DB_URI = DATABASE_URI
 OTHER_DB_URI = DATABASE_URI
+FILE_DB_URI = DATABASE_URI
+SEC_FILE_DB_URI = DATABASE_URI
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
@@ -140,12 +142,10 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 # Others
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
+MAX_BTN = environ.get("MAX_BTN", "5")
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
-
-
-
